@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat Alternates", serif;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    width: 100%;
+    height: 100lvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(./Resource/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container,
+.popup_res{
+    width: 60%;
+    min-height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #ffffff34;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 50px 10px rgba(58, 56, 56, 0.603);
+}
+
+h1{
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+.form_parent{
+    margin-bottom: 40px;
+    background: linear-gradient(214deg, rgba(102,8,173,1) 0%, rgba(238,26,98,1) 73%, rgba(255,38,0,1) 100%);
+    padding: 15px 30px ;
+    border-radius: 15px;
+}
+
+.form_parent>label{
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin-right: 10px;
+}
+.form_parent>input{
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border: none;
+    background: transparent;
+    color: aliceblue;
+}
+.form_parent>input:focus{
+    outline: none;
+}
+
+button{
+    font-size: 1.2rem;
+    color: aliceblue;
+    background: linear-gradient(214deg, rgba(102,8,173,1) 0%, rgba(238,26,98,1) 73%, rgba(255,38,0,1) 100%);
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1.5s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.603);
+}
+
+.popup_res{
+    width: 40%;
+    position: fixed;
+    display: none;
+}
+.close{
+    position: fixed;
+    font-size: 5rem;
+    top: -10px;
+    right: 40px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.close:hover{
+    rotate: 360deg;
+    scale: 1.3 1.3;
+}
